@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "material-components-web": "^0.24.0",
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.6.0",
+    "nodemon": "^1.12.1"
+  }
+}

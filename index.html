@@ -1,0 +1,90 @@
+<html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection">
+    <title>title</title>
+
+</head>
+<body>
+<section id="landing-page">
+
+    <div class="flex-wrapper">
+        <nav class="light-blue darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="right dropdown-button" data-activates="menu"><i id="nav-button" class="large material-icons">dehaze</i></a>
+                <ul id="menu" class="dropdown-content">
+                    <li><a href="#">Sekcja 1</a></li>
+                    <li><a href="#">Sekcja 2</a></li>
+                    <li><a href="#">Sekcja 3</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="landing-page-headline">
+            <h1>Potrzebujesz strony?</h1>
+            <h2>Tutaj ją dostaniesz!</h2>
+        </div>
+        <div class="ide">
+            <div class="ide-header">
+                <div class="icon-exit"></div>
+                <div class="icon-minimize"></div>
+                <div class="icon-expand"></div>
+            </div>
+            <div class="ide-content">
+                <div class="ide-line">
+                    < <div class="html-tag"></div> >
+                </div>
+                <div class="ide-line-indented-first">
+                    < <div class="head-tag"></div> >
+                </div>
+                <div class="ide-line-indented-second">
+                    < <div class="head-first-tag"></div> />
+                </div>
+                <div class="ide-line-indented-second">
+                    < <div class="head-second-tag"></div> > <div class="head-second-content"></div> < <div class="head-second-tag"></div> />
+                </div>
+                <div class="ide-line-indented-first">
+                    < <div class="head-tag"></div> />
+                </div>
+                <div class="ide-line-indented-first">
+                    < <div class="body-tag"></div> >
+                </div>
+                <div class="ide-line-indented-second">
+                    < <div class="body-first-tag"></div> >
+                </div>
+                <div class="ide-line-indented-third">
+                    < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
+                </div>
+                <div class="ide-line-indented-third">
+                    < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrainWidth: false, // Does not change width of dropdown to that of the activator
+                hover: false, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: true, // Displays dropdown below the button
+                alignment: 'left', // Displays dropdown with edge aligned to the left of button
+                stopPropagation: false // Stops event propagation
+            }
+        );
+    });
+</script>
+</body>
+</html>

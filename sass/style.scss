@@ -1,0 +1,164 @@
+@import 'includes/variables';
+@import 'includes/functions';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&subset=latin-ext');
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#landing-page {
+  width: 100%;
+  height: 100%;
+  background-color: #0277BD;
+
+  .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    nav {
+
+
+      .nav-wrapper {
+        padding: 0 10px;
+      }
+
+      #nav-button {
+        height: 38px;
+      }
+    }
+
+    .landing-page-headline {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-align: center;
+
+      h1 {
+        font-weight: 300;
+        font-size: 35px;
+        color: #F5F5F5;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 300;
+        color: #E0E0E0;
+      }
+    }
+
+    .ide {
+      width: 90%;
+      height: 180px;
+      background-color: #212121;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      position: relative;
+      padding: 0 15px;
+
+      .ide-header {
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          height: 5px;
+          width: 5px;
+          border-radius: 10px;
+          margin-right: 5px;
+        }
+
+        .icon-exit {
+          @extend .icon;
+          background-color: #F44336;
+
+        }
+
+        .icon-minimize {
+          @extend .icon;
+          background-color: #FFC107;
+        }
+
+        .icon-expand {
+          @extend .icon;
+          background-color: #4CAF50;
+        }
+      }
+
+      .ide-content{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 18px;
+
+        .ide-line {
+          display: flex;
+          align-items: center;
+          height: 15px;
+        }
+
+        .ide-line-indented-first {
+          @extend .ide-line;
+          padding-left: 15px;
+        }
+
+        .ide-line-indented-second {
+          @extend .ide-line;
+          padding-left: 30px;
+        }
+
+        .ide-line-indented-third {
+          @extend .ide-line;
+          padding-left: 45px;
+        }
+
+        .code {
+          @include code-sm(35px, #FF7043);
+        }
+
+        .html-tag {
+          @include code-sm(20px, #424242)
+        }
+
+        .head-tag {
+          @include code-sm(20px, #616161)
+        }
+
+        .head-first-tag {
+          @include code-sm(85px, #757575)
+        }
+
+        .head-second-tag {
+          @include code-sm(25px, #757575)
+        }
+
+        .head-second-content {
+          @include code-sm(50px, #FDD835)
+        }
+
+        .body-tag {
+          @include code-sm(20px, #757575)
+        }
+
+        .body-first-tag {
+          @include code-sm(45px, #9E9E9E)
+        }
+
+        .body-second-tag {
+          @include code-sm(35px, #BDBDBD)
+        }
+
+        .body-second-tag-content {
+          @include code-sm(75px, #FDD835)
+        }
+
+      }
+    }
+  }
+}

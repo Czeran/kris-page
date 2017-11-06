@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&subset=latin-ext");
+body {
+  width: 100%;
+  height: 100%; }
+
+#landing-page {
+  width: 100%;
+  height: 100%;
+  background-color: #0277BD; }
+  #landing-page .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%; }
+    #landing-page .flex-wrapper nav .nav-wrapper {
+      padding: 0 10px; }
+    #landing-page .flex-wrapper nav #nav-button {
+      height: 38px; }
+    #landing-page .flex-wrapper .landing-page-headline {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-align: center; }
+      #landing-page .flex-wrapper .landing-page-headline h1 {
+        font-weight: 300;
+        font-size: 35px;
+        color: #F5F5F5; }
+      #landing-page .flex-wrapper .landing-page-headline h2 {
+        font-size: 25px;
+        font-weight: 300;
+        color: #E0E0E0; }
+    #landing-page .flex-wrapper .ide {
+      width: 90%;
+      height: 180px;
+      background-color: #212121;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      position: relative;
+      padding: 0 15px; }
+      #landing-page .flex-wrapper .ide .ide-header {
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center; }
+        #landing-page .flex-wrapper .ide .ide-header .icon, #landing-page .flex-wrapper .ide .ide-header .icon-exit, #landing-page .flex-wrapper .ide .ide-header .icon-minimize, #landing-page .flex-wrapper .ide .ide-header .icon-expand {
+          height: 5px;
+          width: 5px;
+          border-radius: 10px;
+          margin-right: 5px; }
+        #landing-page .flex-wrapper .ide .ide-header .icon-exit {
+          background-color: #F44336; }
+        #landing-page .flex-wrapper .ide .ide-header .icon-minimize {
+          background-color: #FFC107; }
+        #landing-page .flex-wrapper .ide .ide-header .icon-expand {
+          background-color: #4CAF50; }
+      #landing-page .flex-wrapper .ide .ide-content {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 18px; }
+        #landing-page .flex-wrapper .ide .ide-content .ide-line, #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-first, #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-second, #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-third {
+          display: flex;
+          align-items: center;
+          height: 15px; }
+        #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-first {
+          padding-left: 15px; }
+        #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-second {
+          padding-left: 30px; }
+        #landing-page .flex-wrapper .ide .ide-content .ide-line-indented-third {
+          padding-left: 45px; }
+        #landing-page .flex-wrapper .ide .ide-content .code {
+          height: 9px;
+          width: 35px;
+          border-radius: 5px;
+          background-color: #FF7043;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .html-tag {
+          height: 9px;
+          width: 20px;
+          border-radius: 5px;
+          background-color: #424242;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .head-tag {
+          height: 9px;
+          width: 20px;
+          border-radius: 5px;
+          background-color: #616161;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .head-first-tag {
+          height: 9px;
+          width: 85px;
+          border-radius: 5px;
+          background-color: #757575;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .head-second-tag {
+          height: 9px;
+          width: 25px;
+          border-radius: 5px;
+          background-color: #757575;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .head-second-content {
+          height: 9px;
+          width: 50px;
+          border-radius: 5px;
+          background-color: #FDD835;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .body-tag {
+          height: 9px;
+          width: 20px;
+          border-radius: 5px;
+          background-color: #757575;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .body-first-tag {
+          height: 9px;
+          width: 45px;
+          border-radius: 5px;
+          background-color: #9E9E9E;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .body-second-tag {
+          height: 9px;
+          width: 35px;
+          border-radius: 5px;
+          background-color: #BDBDBD;
+          margin: 0 4px; }
+        #landing-page .flex-wrapper .ide .ide-content .body-second-tag-content {
+          height: 9px;
+          width: 75px;
+          border-radius: 5px;
+          background-color: #FDD835;
+          margin: 0 4px; }
