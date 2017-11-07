@@ -92,11 +92,11 @@
             $('.line').each(function (index) {
                 var that = this;
                 setTimeout(function () {
-                    $(that).css('opacity', '1');
-                }, 1000 + 300 * (index + 1));
+                    $(that).css('top', '0');
+                }, 200 * (index + 1));
 
             });
-        }, 1000);
+        }, 100);
     }
 
     $(document).ready(function() {

@@ -135,11 +135,13 @@ body {
         flex-direction: column;
         color: white;
         font-size: 18px;
+        overflow: hidden;
+        height: 100%;
 
         .line {
           position: relative;
-          opacity: 0;
-          transition: all 1.5s ease-out;
+          top: 100%;
+          transition: all 1s ease-out;
         }
 
         @include sm() {

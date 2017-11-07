@@ -88,11 +88,13 @@ body {
         display: flex;
         flex-direction: column;
         color: white;
-        font-size: 18px; }
+        font-size: 18px;
+        overflow: hidden;
+        height: 100%; }
         #landing-page .flex-wrapper .ide .ide-content .line {
           position: relative;
-          opacity: 0;
-          transition: all 1.5s ease-out; }
+          top: 100%;
+          transition: all 1s ease-out; }
         @media (min-width: 576px) {
           #landing-page .flex-wrapper .ide .ide-content {
             font-size: 22px; } }
