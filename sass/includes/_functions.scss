@@ -54,4 +54,15 @@ $screen-xl-min: 1200px;
   border-radius: 5px;
   background-color: $color;
   margin: 0 4px;
+
+  @include sm() {
+    height: 14px;
+    width: $width * 2.5;
+  }
+}
+
+@mixin ide-line($height) {
+  display: flex;
+  align-items: center;
+  height: $height;
 }

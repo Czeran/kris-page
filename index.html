@@ -13,16 +13,21 @@
 
 </head>
 <body>
+
 <section id="landing-page">
 
     <div class="flex-wrapper">
         <nav class="light-blue darken-4">
             <div class="nav-wrapper">
-                <a href="#" class="right dropdown-button" data-activates="menu"><i id="nav-button" class="large material-icons">dehaze</i></a>
-                <ul id="menu" class="dropdown-content">
-                    <li><a href="#">Sekcja 1</a></li>
-                    <li><a href="#">Sekcja 2</a></li>
-                    <li><a href="#">Sekcja 3</a></li>
+
+                <!--<a href="#" class="right dropdown-button" data-activates="slide-out"><i id="nav-button" class="large material-icons">dehaze</i></a>-->
+                <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul id="slide-out" class="side-nav">
+                    <li>
+                        <div class="nav-header">
+
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -37,54 +42,67 @@
                 <div class="icon-expand"></div>
             </div>
             <div class="ide-content">
-                <div class="ide-line">
+                <div class="ide-line line">
                     < <div class="html-tag"></div> >
                 </div>
-                <div class="ide-line-indented-first">
+                <div class="ide-line-indented-first line">
                     < <div class="head-tag"></div> >
                 </div>
-                <div class="ide-line-indented-second">
+                <div class="ide-line-indented-second line">
                     < <div class="head-first-tag"></div> />
                 </div>
-                <div class="ide-line-indented-second">
+                <div class="ide-line-indented-second line">
                     < <div class="head-second-tag"></div> > <div class="head-second-content"></div> < <div class="head-second-tag"></div> />
                 </div>
-                <div class="ide-line-indented-first">
+                <div class="ide-line-indented-first line">
                     < <div class="head-tag"></div> />
                 </div>
-                <div class="ide-line-indented-first">
+                <div class="ide-line-indented-first line">
                     < <div class="body-tag"></div> >
                 </div>
-                <div class="ide-line-indented-second">
+                <div class="ide-line-indented-second line">
                     < <div class="body-first-tag"></div> >
                 </div>
-                <div class="ide-line-indented-third">
+                <div class="ide-line-indented-third line">
                     < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
                 </div>
-                <div class="ide-line-indented-third">
+                <div class="ide-line-indented-third line">
                     < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section id="test">
+
+</section>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.dropdown-button').dropdown({
-                inDuration: 300,
-                outDuration: 225,
-                constrainWidth: false, // Does not change width of dropdown to that of the activator
-                hover: false, // Activate on hover
-                gutter: 0, // Spacing from edge
-                belowOrigin: true, // Displays dropdown below the button
-                alignment: 'left', // Displays dropdown with edge aligned to the left of button
-                stopPropagation: false // Stops event propagation
-            }
-        );
+    $('.button-collapse').sideNav({
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true
     });
+
+    var ideAnimation = function() {
+        setTimeout(function () {
+            $('.ide').css('top', 0);
+            $('.line').each(function (index) {
+                var that = this;
+                setTimeout(function () {
+                    $(that).css('opacity', '1');
+                }, 1000 + 300 * (index + 1));
+
+            });
+        }, 1000);
+    }
+
+    $(document).ready(function() {
+       ideAnimation();
+    });
+
 </script>
 </body>
 </html>

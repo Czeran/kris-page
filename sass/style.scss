@@ -7,6 +7,11 @@ body {
   height: 100%;
 }
 
+.button-collapse {
+  @include md() {
+    display: none;
+  }
+}
 
 
 #landing-page {
@@ -21,32 +26,51 @@ body {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 
     nav {
 
 
-      .nav-wrapper {
-        padding: 0 10px;
+      .nav-header {
+        height: 150px;
+        background: linear-gradient(rgba(1, 87, 155, 0.7), rgba(1, 87, 155, 0.7)), url('/images/spiration-light.png');
+        width: 100%;
       }
 
       #nav-button {
         height: 38px;
       }
+
+      #slide-out {
+        width: 250px;
+
+        @include sm() {
+          width: 320px;
+        }
+      }
     }
 
     .landing-page-headline {
-      font-family: 'Roboto Condensed', sans-serif;
       text-align: center;
 
       h1 {
         font-weight: 300;
         font-size: 35px;
         color: #F5F5F5;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        @include sm() {
+          font-size: 65px;
+        }
       }
       h2 {
         font-size: 25px;
         font-weight: 300;
         color: #E0E0E0;
+
+        @include sm() {
+          font-size: 35px;
+        }
       }
     }
 
@@ -58,6 +82,13 @@ body {
       border-top-right-radius: 15px;
       position: relative;
       padding: 0 15px;
+      transition: all 1.5s ease-out;
+      top: 100%;
+
+      @include sm() {
+        height: 240px;
+        padding: 0 20px;
+      }
 
       .ide-header {
         top: 0;
@@ -67,11 +98,19 @@ body {
         display: flex;
         align-items: center;
 
+
+
         .icon {
           height: 5px;
           width: 5px;
           border-radius: 10px;
           margin-right: 5px;
+
+          @include sm() {
+            height: 9px;
+            width: 9px;
+            margin-right: 7px;
+          }
         }
 
         .icon-exit {
@@ -97,10 +136,25 @@ body {
         color: white;
         font-size: 18px;
 
+        .line {
+          position: relative;
+          opacity: 0;
+          transition: all 1.5s ease-out;
+        }
+
+        @include sm() {
+          font-size: 22px;
+        }
+
         .ide-line {
           display: flex;
           align-items: center;
           height: 15px;
+
+          @include sm() {
+            height: 20px;
+            margin-top: 2px;
+          }
         }
 
         .ide-line-indented-first {
