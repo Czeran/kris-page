@@ -47,7 +47,7 @@ body {
             font-size: 65px; } }
         @media (min-width: 992px) {
           #landing-page .flex-wrapper .landing-page-headline h1 {
-            font-size: 85px; } }
+            font-size: 75px; } }
       #landing-page .flex-wrapper .landing-page-headline h2 {
         font-size: 25px;
         font-weight: 300;
@@ -57,7 +57,7 @@ body {
             font-size: 35px; } }
         @media (min-width: 992px) {
           #landing-page .flex-wrapper .landing-page-headline h2 {
-            font-size: 45px; } }
+            font-size: 40px; } }
     #landing-page .flex-wrapper .ide {
       width: 90%;
       height: 180px;
@@ -76,6 +76,9 @@ body {
         #landing-page .flex-wrapper .ide {
           height: 300px;
           width: 75%; } }
+      @media (min-width: 1200px) {
+        #landing-page .flex-wrapper .ide {
+          width: 55%; } }
       #landing-page .flex-wrapper .ide .ide-header {
         top: 0;
         left: 0;
@@ -279,3 +282,38 @@ body {
             #landing-page .flex-wrapper .ide .ide-content .body-second-tag-content {
               height: 16px;
               width: 262.5px; } }
+
+#responsive-design {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #responsive-design .mobile {
+    margin-top: 10px;
+    background: #212121;
+    width: 150px;
+    height: 250px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #responsive-design .mobile .mobile-screen {
+      width: 80%;
+      height: 80%;
+      background-color: #F5F5F5; }
+      #responsive-design .mobile .mobile-screen .mobile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 10px; }
+        #responsive-design .mobile .mobile-screen .mobile-content .mobile-nav {
+          height: 30px;
+          width: 100%;
+          background-color: #01579b;
+          align-self: flex-start; }
+        #responsive-design .mobile .mobile-screen .mobile-content .mobile-block {
+          background-color: #BDBDBD;
+          height: 15%;
+          width: 80%; }
