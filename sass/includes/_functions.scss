@@ -59,6 +59,11 @@ $screen-xl-min: 1200px;
     height: 14px;
     width: $width * 2.5;
   }
+
+  @include lg() {
+    height: 16px;
+    width: $width * 3.5;
+  }
 }
 
 @mixin ide-line($height) {

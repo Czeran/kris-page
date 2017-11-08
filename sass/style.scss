@@ -30,6 +30,12 @@ body {
 
     nav {
 
+      .navigation {
+        display: none;
+        @include md() {
+          display: inline-block;
+        }
+      }
 
       .nav-header {
         height: 150px;
@@ -62,6 +68,10 @@ body {
         @include sm() {
           font-size: 65px;
         }
+
+        @include lg() {
+          font-size: 85px;
+        }
       }
       h2 {
         font-size: 25px;
@@ -70,6 +80,10 @@ body {
 
         @include sm() {
           font-size: 35px;
+        }
+
+        @include lg() {
+          font-size: 45px;
         }
       }
     }
@@ -88,6 +102,11 @@ body {
       @include sm() {
         height: 240px;
         padding: 0 20px;
+      }
+
+      @include lg() {
+        height: 300px;
+        width: 75%;
       }
 
       .ide-header {
@@ -110,6 +129,12 @@ body {
             height: 9px;
             width: 9px;
             margin-right: 7px;
+          }
+
+          @include lg() {
+            height: 11px;
+            width: 11px;
+            margin-right: 8px;
           }
         }
 
@@ -138,15 +163,21 @@ body {
         overflow: hidden;
         height: 100%;
 
+        @include sm() {
+          font-size: 22px;
+        }
+
+        @include lg() {
+          font-size: 25px;
+        }
+
         .line {
           position: relative;
           top: 100%;
           transition: all 1s ease-out;
         }
 
-        @include sm() {
-          font-size: 22px;
-        }
+
 
         .ide-line {
           display: flex;
@@ -156,6 +187,11 @@ body {
           @include sm() {
             height: 20px;
             margin-top: 2px;
+          }
+
+          @include lg() {
+            height: 25px;
+            margin-top: 3px;
           }
         }
 
