@@ -260,7 +260,6 @@ body {
 }
 
 #responsive-design {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,8 +267,8 @@ body {
   .mobile {
     margin-top: 10px;
     background: $device-gray;
-    width: 150px;
-    height: 250px;
+    width: 125px;
+    height: 200px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -279,8 +278,6 @@ body {
       width: 80%;
       height: 80%;
       background-color: $screen-white;
-
-
 
       .mobile-content {
         display: flex;
@@ -303,6 +300,108 @@ body {
           width: 80%;
         }
       }
+    }
+  }
+
+  .tablet {
+    margin-top: 10px;
+    background: $device-gray;
+    width: 150px;
+    height: 250px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-screen {
+      width: 80%;
+      height: 80%;
+      background-color: $screen-white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-nav {
+      height: 30px;
+      width: 100%;
+      background-color: $primary-blue;
+      align-self: flex-start;
+    }
+
+    &-content {
+
+      .tablet-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+
+        & > .tablet-block {
+          background-color: #BDBDBD;
+          height: 15%;
+          flex-basis: 100%;
+          margin: 5px auto;
+        }
+
+        & > .tablet-block ~ .tablet-block {
+          flex-basis: 45%;
+        }
+      }
+    }
+  }
+
+  .desktop {
+    margin-top: 10px;
+    background: $device-gray;
+    width: 280px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-screen {
+      width: 85%;
+      height: 80%;
+      background-color: $screen-white;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &-nav {
+      height: 30px;
+      width: 100%;
+      background-color: $primary-blue;
+      align-self: flex-start;
+    }
+
+    &-content {
+
+      .desktop-wrapper {
+
+        .desktop-block {
+          background-color: #BDBDBD;
+          height: 15%;
+          flex-basis: 100%;
+          margin: 5px auto;
+        }
+
+        .first-row {
+
+          .left-column {
+
+          }
+
+          .right-column {
+
+          }
+        }
+      }
+
     }
   }
 }

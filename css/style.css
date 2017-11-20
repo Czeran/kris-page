@@ -284,15 +284,14 @@ body {
               width: 262.5px; } }
 
 #responsive-design {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #responsive-design .mobile {
     margin-top: 10px;
     background: #212121;
-    width: 150px;
-    height: 250px;
+    width: 125px;
+    height: 200px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -317,3 +316,63 @@ body {
           background-color: #BDBDBD;
           height: 15%;
           width: 80%; }
+  #responsive-design .tablet {
+    margin-top: 10px;
+    background: #212121;
+    width: 150px;
+    height: 250px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #responsive-design .tablet-screen {
+      width: 80%;
+      height: 80%;
+      background-color: #F5F5F5;
+      display: flex;
+      flex-direction: column; }
+    #responsive-design .tablet-nav {
+      height: 30px;
+      width: 100%;
+      background-color: #01579b;
+      align-self: flex-start; }
+    #responsive-design .tablet-content .tablet-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 5px; }
+      #responsive-design .tablet-content .tablet-wrapper > .tablet-block {
+        background-color: #BDBDBD;
+        height: 15%;
+        flex-basis: 100%;
+        margin: 5px auto; }
+      #responsive-design .tablet-content .tablet-wrapper > .tablet-block ~ .tablet-block {
+        flex-basis: 45%; }
+  #responsive-design .desktop {
+    margin-top: 10px;
+    background: #212121;
+    width: 280px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #responsive-design .desktop-screen {
+      width: 85%;
+      height: 80%;
+      background-color: #F5F5F5;
+      display: flex;
+      flex-direction: column; }
+    #responsive-design .desktop-nav {
+      height: 30px;
+      width: 100%;
+      background-color: #01579b;
+      align-self: flex-start; }
+    #responsive-design .desktop-content .desktop-wrapper .desktop-block {
+      background-color: #BDBDBD;
+      height: 15%;
+      flex-basis: 100%;
+      margin: 5px auto; }
