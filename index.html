@@ -112,12 +112,17 @@
             <div class="desktop-content">
                 <div class="desktop-nav">
                     <div class="desktop-wrapper">
-                        <div class="first-row">
-                            <div class="left-column">
+                        <div class="desktop-row">
+                            <div class="left-row">
                                 <div class="desktop-block"></div>
                             </div>
-                            <div class="right-column"></div>
+                            <div class="right-row">
+                                <div class="desktop-block"></div>
+                                <div class="desktop-block"></div>
+                            </div>
                         </div>
+                        <div class="desktop-block"></div>
+                        <div class="desktop-block"></div>
                     </div>
                 </div>
             </div>
@@ -142,7 +147,6 @@
                 setTimeout(function () {
                     $(that).css('top', '0');
                 }, 80 * (index + 1));
-
             });
         }, 100);
     }

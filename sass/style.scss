@@ -357,7 +357,7 @@ body {
     margin-top: 10px;
     background: $device-gray;
     width: 280px;
-    height: 200px;
+    height: 225px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -372,34 +372,51 @@ body {
 
     }
 
-    &-nav {
-      height: 30px;
-      width: 100%;
-      background-color: $primary-blue;
-      align-self: flex-start;
-    }
+
 
     &-content {
+      display: flex;
+      flex-direction: column;
+
+      .desktop-nav {
+        height: 30px;
+        width: 100%;
+        background-color: $primary-blue;
+        align-self: flex-start;
+      }
 
       .desktop-wrapper {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        padding: 0 10px;
 
         .desktop-block {
           background-color: #BDBDBD;
-          height: 15%;
-          flex-basis: 100%;
-          margin: 5px auto;
+          margin-top: 10px;
+          height: 25px;
         }
 
-        .first-row {
+        .desktop-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 
-          .left-column {
+          .left-row {
+            flex-basis: 50%;
+
+            .desktop-block {
+              height: 60px;
+            }
 
           }
 
-          .right-column {
-
+          .right-row {
+            flex-basis: 45%;
           }
+
         }
+
       }
 
     }

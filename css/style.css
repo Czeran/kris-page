@@ -355,7 +355,7 @@ body {
     margin-top: 10px;
     background: #212121;
     width: 280px;
-    height: 200px;
+    height: 225px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -366,13 +366,30 @@ body {
       background-color: #F5F5F5;
       display: flex;
       flex-direction: column; }
-    #responsive-design .desktop-nav {
-      height: 30px;
-      width: 100%;
-      background-color: #01579b;
-      align-self: flex-start; }
-    #responsive-design .desktop-content .desktop-wrapper .desktop-block {
-      background-color: #BDBDBD;
-      height: 15%;
-      flex-basis: 100%;
-      margin: 5px auto; }
+    #responsive-design .desktop-content {
+      display: flex;
+      flex-direction: column; }
+      #responsive-design .desktop-content .desktop-nav {
+        height: 30px;
+        width: 100%;
+        background-color: #01579b;
+        align-self: flex-start; }
+      #responsive-design .desktop-content .desktop-wrapper {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        padding: 0 10px; }
+        #responsive-design .desktop-content .desktop-wrapper .desktop-block {
+          background-color: #BDBDBD;
+          margin-top: 10px;
+          height: 25px; }
+        #responsive-design .desktop-content .desktop-wrapper .desktop-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          #responsive-design .desktop-content .desktop-wrapper .desktop-row .left-row {
+            flex-basis: 50%; }
+            #responsive-design .desktop-content .desktop-wrapper .desktop-row .left-row .desktop-block {
+              height: 60px; }
+          #responsive-design .desktop-content .desktop-wrapper .desktop-row .right-row {
+            flex-basis: 45%; }
