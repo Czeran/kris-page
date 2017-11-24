@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&subset=latin-ext");
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden !important; }
 
 @media (min-width: 768px) {
   .button-collapse {
@@ -284,9 +285,13 @@ body {
               width: 262.5px; } }
 
 #responsive-design {
+  overflow-y: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease-out;
+  height: 100%; }
   #responsive-design .mobile {
     margin-top: 10px;
     background: #212121;
@@ -295,7 +300,10 @@ body {
     border-radius: 25px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    transition: 1.5s ease-out;
+    position: absolute;
+    right: -100%; }
     #responsive-design .mobile .mobile-screen {
       width: 80%;
       height: 80%;
@@ -322,9 +330,14 @@ body {
     width: 150px;
     height: 250px;
     border-radius: 25px;
-    display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    transition: all 1.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -100%; }
     #responsive-design .tablet-screen {
       width: 80%;
       height: 80%;
@@ -352,14 +365,17 @@ body {
       #responsive-design .tablet-content .tablet-wrapper > .tablet-block ~ .tablet-block {
         flex-basis: 45%; }
   #responsive-design .desktop {
+    display: flex;
     margin-top: 10px;
     background: #212121;
     width: 280px;
     height: 225px;
     border-radius: 25px;
-    display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    transition: all 1.5s ease-out;
+    position: absolute;
+    right: -100%; }
     #responsive-design .desktop-screen {
       width: 85%;
       height: 80%;

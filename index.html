@@ -149,10 +149,28 @@
                 }, 80 * (index + 1));
             });
         }, 100);
-    }
+    };
+
+    var rwdDevicesAnimation = function() {
+        var mobile = $('.mobile');
+        var tablet = $('.tablet');
+        var desktop = $('.desktop');
+        setTimeout(function () {
+            mobile.css('right', 'calc(50% - '+ mobile.width()/2 +'px)');
+        }, 1000);
+        setTimeout(function () {
+            mobile.css('right', '100%');
+            tablet.css('right', 'calc(50% - '+ tablet.width()/2 +'px)')
+        }, 4000);
+        setTimeout(function () {
+           tablet.css('right', '100%');
+           desktop.css('right', 'calc(50% - '+ desktop.width()/2 +'px)')
+        }, 7000);
+    };
 
     $(document).ready(function() {
        ideAnimation();
+       rwdDevicesAnimation();
     });
 
 </script>
