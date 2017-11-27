@@ -1,134 +1,182 @@
 <html>
-<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
-<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
-<!--[if IE 8]><html class="preIE9"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<!--[if lte IE 6]>
+<html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]>
+<html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]>
+<html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html><!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="css/style.css">
     <title>title</title>
 
 </head>
 <body>
 
-<section id="landing-page">
 
-    <div class="flex-wrapper">
-        <nav class="light-blue darken-4">
-            <div class="nav-wrapper">
+<!--TODO body-wrapper psuje sidenav-->
+<div class="body-wrapper">
 
-                <!--<a href="#" class="right dropdown-button" data-activates="slide-out"><i id="nav-button" class="large material-icons">dehaze</i></a>-->
-                <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
-                <ul class="right navigation">
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
-                </ul>
-                <ul id="slide-out" class="side-nav">
-                    <li>
-                        <div class="nav-header">
+    <section id="landing-page">
 
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="landing-page-headline">
-            <h1>Potrzebujesz strony?</h1>
-            <h2>Tutaj ją dostaniesz!</h2>
-        </div>
-        <div class="ide">
-            <div class="ide-header">
-                <div class="icon-exit"></div>
-                <div class="icon-minimize"></div>
-                <div class="icon-expand"></div>
-            </div>
-            <div class="ide-content">
-                <div class="ide-line line">
-                    < <div class="html-tag"></div> >
-                </div>
-                <div class="ide-line-indented-first line">
-                    < <div class="head-tag"></div> >
-                </div>
-                <div class="ide-line-indented-second line">
-                    < <div class="head-first-tag"></div> />
-                </div>
-                <div class="ide-line-indented-second line">
-                    < <div class="head-second-tag"></div> > <div class="head-second-content"></div> < <div class="head-second-tag"></div> />
-                </div>
-                <div class="ide-line-indented-first line">
-                    < <div class="head-tag"></div> />
-                </div>
-                <div class="ide-line-indented-first line">
-                    < <div class="body-tag"></div> >
-                </div>
-                <div class="ide-line-indented-second line">
-                    < <div class="body-first-tag"></div> >
-                </div>
-                <div class="ide-line-indented-third line">
-                    < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
-                </div>
-                <div class="ide-line-indented-third line">
-                    < <div class="body-second-tag"></div> > <div class="body-second-tag-content"></div> < <div class="body-second-tag"></div> />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="responsive-design">
-    <div class="mobile">
-        <div class="mobile-screen">
-            <div class="mobile-content">
-                <div class="mobile-nav"></div>
-                <div class="mobile-block"></div>
-                <div class="mobile-block"></div>
-                <div class="mobile-block"></div>
-                <div class="mobile-block"></div>
-            </div>
-        </div>
-    </div>
-    <div class="tablet">
-        <div class="tablet-screen">
-            <div class="tablet-content">
-                <div class="tablet-nav"></div>
-                <div class="tablet-wrapper">
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                    <div class="tablet-block"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="flex-wrapper">
+            <nav class="light-blue darken-4">
+                <div class="nav-wrapper">
 
-    <div class="desktop">
-        <div class="desktop-screen">
-            <div class="desktop-content">
-                <div class="desktop-nav">
-                    <div class="desktop-wrapper">
-                        <div class="desktop-row">
-                            <div class="left-row">
-                                <div class="desktop-block"></div>
+                    <!--<a href="#" class="right dropdown-button" data-activates="slide-out"><i id="nav-button" class="large material-icons">dehaze</i></a>-->
+                    <a href="#" data-activates="slide-out" class="button-collapse right"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right navigation">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li>
+                            <div class="nav-header">
+
                             </div>
-                            <div class="right-row">
-                                <div class="desktop-block"></div>
-                                <div class="desktop-block"></div>
-                            </div>
-                        </div>
-                        <div class="desktop-block"></div>
-                        <div class="desktop-block"></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="landing-page-headline">
+                <h1>Potrzebujesz strony?</h1>
+                <h2>Tutaj ją dostaniesz!</h2>
+            </div>
+            <div class="ide">
+                <div class="ide-header">
+                    <div class="icon-exit"></div>
+                    <div class="icon-minimize"></div>
+                    <div class="icon-expand"></div>
+                </div>
+                <div class="ide-content">
+                    <div class="ide-line line">
+                        <
+                        <div class="html-tag"></div>
+                        >
+                    </div>
+                    <div class="ide-line-indented-first line">
+                        <
+                        <div class="head-tag"></div>
+                        >
+                    </div>
+                    <div class="ide-line-indented-second line">
+                        <
+                        <div class="head-first-tag"></div>
+                        />
+                    </div>
+                    <div class="ide-line-indented-second line">
+                        <
+                        <div class="head-second-tag"></div>
+                        >
+                        <div class="head-second-content"></div>
+                        <
+                        <div class="head-second-tag"></div>
+                        />
+                    </div>
+                    <div class="ide-line-indented-first line">
+                        <
+                        <div class="head-tag"></div>
+                        />
+                    </div>
+                    <div class="ide-line-indented-first line">
+                        <
+                        <div class="body-tag"></div>
+                        >
+                    </div>
+                    <div class="ide-line-indented-second line">
+                        <
+                        <div class="body-first-tag"></div>
+                        >
+                    </div>
+                    <div class="ide-line-indented-third line">
+                        <
+                        <div class="body-second-tag"></div>
+                        >
+                        <div class="body-second-tag-content"></div>
+                        <
+                        <div class="body-second-tag"></div>
+                        />
+                    </div>
+                    <div class="ide-line-indented-third line">
+                        <
+                        <div class="body-second-tag"></div>
+                        >
+                        <div class="body-second-tag-content"></div>
+                        <
+                        <div class="body-second-tag"></div>
+                        />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section id="responsive-design">
+        <div class="rwd-animation-wrapper">
+            <div class="mobile">
+                <div class="mobile-screen">
+                    <div class="mobile-content">
+                        <div class="mobile-nav"></div>
+                        <div class="mobile-block"></div>
+                        <div class="mobile-block"></div>
+                        <div class="mobile-block"></div>
+                        <div class="mobile-block"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet">
+                <div class="tablet-screen">
+                    <div class="tablet-content">
+                        <div class="tablet-nav"></div>
+                        <div class="tablet-wrapper">
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                            <div class="tablet-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desktop">
+                <div class="desktop-screen">
+                    <div class="desktop-content">
+                        <div class="desktop-nav">
+                            <div class="desktop-wrapper">
+                                <div class="desktop-row">
+                                    <div class="left-row">
+                                        <div class="desktop-block"></div>
+                                    </div>
+                                    <div class="right-row">
+                                        <div class="desktop-block"></div>
+                                        <div class="desktop-block"></div>
+                                    </div>
+                                </div>
+                                <div class="desktop-block"></div>
+                                <div class="desktop-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rwd-description container">
+            <h1>Strona dostosowana na każde urządzenie</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda atque aut autem cum cupiditate doloremque, est exercitationem id ipsam laboriosam nobis perspiciatis quam repellat repellendus sapiente suscipit voluptas voluptate.</p>
+        </div>
+
+    </section>
+
+</div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
@@ -139,7 +187,7 @@
         draggable: true
     });
 
-    var ideAnimation = function() {
+    var ideAnimation = function () {
         setTimeout(function () {
             $('.ide').css('top', 0);
             $('.line').each(function (index) {
@@ -151,26 +199,26 @@
         }, 100);
     };
 
-    var rwdDevicesAnimation = function() {
+    var rwdDevicesAnimation = function () {
         var mobile = $('.mobile');
         var tablet = $('.tablet');
         var desktop = $('.desktop');
         setTimeout(function () {
-            mobile.css('right', 'calc(50% - '+ mobile.width()/2 +'px)');
+            mobile.css('right', 'calc(50% - ' + mobile.width() / 2 + 'px)');
         }, 1000);
         setTimeout(function () {
             mobile.css('right', '100%');
-            tablet.css('right', 'calc(50% - '+ tablet.width()/2 +'px)')
+            tablet.css('right', 'calc(50% - ' + tablet.width() / 2 + 'px)')
         }, 4000);
         setTimeout(function () {
-           tablet.css('right', '100%');
-           desktop.css('right', 'calc(50% - '+ desktop.width()/2 +'px)')
+            tablet.css('right', '100%');
+            desktop.css('right', 'calc(50% - ' + desktop.width() / 2 + 'px)')
         }, 7000);
     };
 
-    $(document).ready(function() {
-       ideAnimation();
-       rwdDevicesAnimation();
+    $(document).ready(function () {
+        ideAnimation();
+        rwdDevicesAnimation();
     });
 
 </script>

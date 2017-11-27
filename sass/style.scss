@@ -5,8 +5,25 @@
 body {
   width: 100%;
   height: 100%;
-  overflow-y: hidden !important; // hide vertical
 
+  .body-wrapper {
+    width: inherit;
+    height: inherit;
+    overflow-x: hidden !important; // hide vertical
+    position: fixed;
+  }
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  color: #212121;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #616161;
 }
 
 .button-collapse {
@@ -257,178 +274,207 @@ body {
 }
 
 #responsive-design {
-  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide vertical
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   transition: all 3s ease-out;
-  height: 100%;
 
-  .mobile {
-    margin-top: 10px;
-    background: $device-gray;
-    width: 125px;
-    height: 200px;
-    border-radius: 25px;
+  @include md() {
+    flex-direction: row;
+
+  }
+
+  .rwd-animation-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1.5s ease-out;
-    position: absolute;
-    right: -100%;
+    width: 100%;
+    height: 210px;
+    margin: 15px 0;
+    @include md() {
+      flex-basis: 50%;
+    }
+    .mobile {
+      background: $device-gray;
+      width: 100px;
+      height: 150px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 1.5s ease-out;
+      position: absolute;
+      right: -100%;
 
-    .mobile-screen {
-      width: 80%;
-      height: 80%;
-      background-color: $screen-white;
+      .mobile-screen {
+        width: 75%;
+        height: 75%;
+        background-color: $screen-white;
 
-      .mobile-content {
+        .mobile-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          padding-bottom: 10px;
+
+          .mobile-nav {
+            height: 20px;
+            width: 100%;
+            background-color: $primary-blue;
+            align-self: flex-start;
+          }
+
+          .mobile-block {
+            background-color: #BDBDBD;
+            height: 15%;
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .tablet {
+      background: $device-gray;
+      width: 125px;
+      height: 200px;
+      border-radius: 25px;
+      align-items: center;
+      justify-content: center;
+      transition: all 1.5s ease-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -100%;
+
+      &-screen {
+        width: 75%;
+        height: 75%;
+        background-color: $screen-white;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding-bottom: 10px;
+      }
 
-        .mobile-nav {
+      &-nav {
+        height: 20px;
+        width: 100%;
+        background-color: $primary-blue;
+        align-self: flex-start;
+      }
+
+      &-content {
+
+        .tablet-wrapper {
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 5px;
+
+          & > .tablet-block {
+            background-color: #BDBDBD;
+            height: 13%;
+            flex-basis: 100%;
+            margin: 5px auto;
+          }
+
+          & > .tablet-block ~ .tablet-block {
+            flex-basis: 45%;
+          }
+        }
+      }
+    }
+
+    .desktop {
+      display: flex;
+      background: $device-gray;
+      width: 240px;
+      height: 210px;
+      border-radius: 25px;
+      align-items: center;
+      justify-content: center;
+      transition: all 1.5s ease-out;
+      position: absolute;
+      right: -100%;
+
+      &-screen {
+        width: 80%;
+        height: 75%;
+        background-color: $screen-white;
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        .desktop-nav {
           height: 30px;
           width: 100%;
           background-color: $primary-blue;
           align-self: flex-start;
         }
 
-        .mobile-block {
-          background-color: #BDBDBD;
-          height: 15%;
-          width: 80%;
-        }
-      }
-    }
-  }
-
-  .tablet {
-    margin-top: 10px;
-    background: $device-gray;
-    width: 150px;
-    height: 250px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    transition: all 1.5s ease-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: -100%;
-
-    &-screen {
-      width: 80%;
-      height: 80%;
-      background-color: $screen-white;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-nav {
-      height: 30px;
-      width: 100%;
-      background-color: $primary-blue;
-      align-self: flex-start;
-    }
-
-    &-content {
-
-      .tablet-wrapper {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 5px;
-
-        & > .tablet-block {
-          background-color: #BDBDBD;
-          height: 15%;
-          flex-basis: 100%;
-          margin: 5px auto;
-        }
-
-        & > .tablet-block ~ .tablet-block {
-          flex-basis: 45%;
-        }
-      }
-    }
-  }
-
-  .desktop {
-    display: flex;
-    margin-top: 10px;
-    background: $device-gray;
-    width: 280px;
-    height: 225px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    transition: all 1.5s ease-out;
-    position: absolute;
-    right: -100%;
-
-    &-screen {
-      width: 85%;
-      height: 80%;
-      background-color: $screen-white;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    &-content {
-      display: flex;
-      flex-direction: column;
-
-      .desktop-nav {
-        height: 30px;
-        width: 100%;
-        background-color: $primary-blue;
-        align-self: flex-start;
-      }
-
-      .desktop-wrapper {
-        display: flex;
-        margin-top: 30px;
-        flex-direction: column;
-        padding: 0 10px;
-
-        .desktop-block {
-          background-color: #BDBDBD;
-          margin-top: 10px;
-          height: 25px;
-        }
-
-        .desktop-row {
+        .desktop-wrapper {
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+          margin-top: 30px;
+          flex-direction: column;
+          padding: 0 10px;
 
-          .left-row {
-            flex-basis: 50%;
+          .desktop-block {
+            background-color: #BDBDBD;
+            margin-top: 10px;
+            height: 20px;
+          }
 
-            .desktop-block {
-              height: 60px;
+          .desktop-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .left-row {
+              flex-basis: 50%;
+
+              .desktop-block {
+                height: 50px;
+              }
+
+            }
+
+            .right-row {
+              flex-basis: 45%;
             }
 
           }
 
-          .right-row {
-            flex-basis: 45%;
-          }
-
         }
 
       }
+    }
+  }
+  .rwd-description {
 
+    h1 {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    @include md() {
+      flex-basis: 50%;
+      height: 100%;
+      z-index: 5;
     }
   }
 }
