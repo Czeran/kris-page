@@ -303,10 +303,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 3s ease-out; }
+  transition: all 3s ease-out;
+  padding: 20px 0; }
   @media (min-width: 768px) {
     #responsive-design {
-      flex-direction: row; } }
+      flex-direction: row;
+      height: 500px;
+      justify-content: center;
+      padding-top: 0; } }
   #responsive-design .rwd-animation-wrapper {
     position: relative;
     display: flex;
@@ -315,13 +319,18 @@ p {
     width: 100%;
     height: 210px;
     margin: 15px 0; }
+    @media (min-width: 576px) {
+      #responsive-design .rwd-animation-wrapper {
+        height: 250px; } }
     @media (min-width: 768px) {
       #responsive-design .rwd-animation-wrapper {
-        flex-basis: 50%; } }
+        flex-basis: 50%;
+        height: 100%;
+        margin: 0; } }
     #responsive-design .rwd-animation-wrapper .mobile {
       background: #212121;
-      width: 100px;
-      height: 150px;
+      width: 120px;
+      height: 190px;
       border-radius: 25px;
       display: flex;
       align-items: center;
@@ -329,6 +338,13 @@ p {
       transition: 1.5s ease-out;
       position: absolute;
       right: -100%; }
+      @media (min-width: 576px) {
+        #responsive-design .rwd-animation-wrapper .mobile {
+          width: 130px;
+          height: 220px; } }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-animation-wrapper .mobile {
+          bottom: calc(50%  - 73.3px); } }
       #responsive-design .rwd-animation-wrapper .mobile .mobile-screen {
         width: 75%;
         height: 75%;
@@ -351,8 +367,8 @@ p {
             width: 80%; }
     #responsive-design .rwd-animation-wrapper .tablet {
       background: #212121;
-      width: 125px;
-      height: 200px;
+      width: 170px;
+      height: 210px;
       border-radius: 25px;
       align-items: center;
       justify-content: center;
@@ -362,6 +378,13 @@ p {
       align-items: center;
       position: absolute;
       right: -100%; }
+      @media (min-width: 576px) {
+        #responsive-design .rwd-animation-wrapper .tablet {
+          height: 260px;
+          width: 195px; } }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-animation-wrapper .tablet {
+          bottom: calc(50%  - 86.6px); } }
       #responsive-design .rwd-animation-wrapper .tablet-screen {
         width: 75%;
         height: 75%;
@@ -386,12 +409,15 @@ p {
           height: 13%;
           flex-basis: 100%;
           margin: 5px auto; }
+          @media (min-width: 576px) {
+            #responsive-design .rwd-animation-wrapper .tablet-content .tablet-wrapper > .tablet-block {
+              height: 15%; } }
         #responsive-design .rwd-animation-wrapper .tablet-content .tablet-wrapper > .tablet-block ~ .tablet-block {
           flex-basis: 45%; }
     #responsive-design .rwd-animation-wrapper .desktop {
       display: flex;
       background: #212121;
-      width: 240px;
+      width: 260px;
       height: 210px;
       border-radius: 25px;
       align-items: center;
@@ -399,6 +425,13 @@ p {
       transition: all 1.5s ease-out;
       position: absolute;
       right: -100%; }
+      @media (min-width: 576px) {
+        #responsive-design .rwd-animation-wrapper .desktop {
+          width: 330px;
+          height: 250px; } }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-animation-wrapper .desktop {
+          bottom: calc(50%  - 83.3px); } }
       #responsive-design .rwd-animation-wrapper .desktop-screen {
         width: 80%;
         height: 75%;
@@ -407,21 +440,33 @@ p {
         flex-direction: column; }
       #responsive-design .rwd-animation-wrapper .desktop-content {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        height: 100%; }
         #responsive-design .rwd-animation-wrapper .desktop-content .desktop-nav {
           height: 30px;
           width: 100%;
           background-color: #01579b;
           align-self: flex-start; }
+          @media (min-width: 576px) {
+            #responsive-design .rwd-animation-wrapper .desktop-content .desktop-nav {
+              height: 35px; } }
         #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper {
           display: flex;
           margin-top: 30px;
           flex-direction: column;
-          padding: 0 10px; }
+          padding: 0 10px;
+          height: 127.5px; }
+          @media (min-width: 576px) {
+            #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper {
+              height: 152.5px;
+              margin-top: 35px; } }
           #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-block {
             background-color: #BDBDBD;
             margin-top: 10px;
-            height: 20px; }
+            height: 15%; }
+            @media (min-width: 768px) {
+              #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-block {
+                height: 16%; } }
           #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-row {
             display: flex;
             flex-direction: row;
@@ -429,16 +474,23 @@ p {
             #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-row .left-row {
               flex-basis: 50%; }
               #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-row .left-row .desktop-block {
-                height: 50px; }
+                height: 38.5%; }
             #responsive-design .rwd-animation-wrapper .desktop-content .desktop-wrapper .desktop-row .right-row {
               flex-basis: 45%; }
-  #responsive-design .rwd-description h1 {
-    text-align: center;
-    margin: 5px 0; }
-  #responsive-design .rwd-description p {
-    text-align: center; }
-  @media (min-width: 768px) {
-    #responsive-design .rwd-description {
-      flex-basis: 50%;
-      height: 100%;
-      z-index: 5; } }
+  #responsive-design .rwd-description {
+    display: flex;
+    flex-direction: column; }
+    #responsive-design .rwd-description .rwd-description-wrapper {
+      position: relative;
+      top: 20%; }
+    #responsive-design .rwd-description h1 {
+      text-align: center;
+      margin: 5px 0; }
+    #responsive-design .rwd-description p {
+      text-align: center; }
+    @media (min-width: 768px) {
+      #responsive-design .rwd-description {
+        flex-basis: 50%;
+        height: 100%;
+        background-color: white;
+        z-index: 5; } }
