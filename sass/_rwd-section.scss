@@ -5,6 +5,12 @@
   align-items: center;
   transition: all 3s ease-out;
   padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include md() {
+    padding: 0px;
+  }
 
 
   @include md() {
@@ -253,17 +259,29 @@
       position: relative;
 
       @include md() {
-        margin: 0 15px;
+        margin: 0 25px;
+      }
+
+      @include xl() {
+        margin: 0 50px;
       }
     }
 
     h1 {
       text-align: center;
       margin: 5px 0;
+
+      @include md() {
+        text-align: left;
+      }
     }
 
     p {
       text-align: center;
+
+      @include md() {
+        text-align: left;
+      }
     }
 
     @include md() {

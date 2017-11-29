@@ -27,8 +27,12 @@ p {
 
   @include lg() {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
   }
+}
+
+.own-container {
+  max-width: 1140px;
 }
 
 .button-collapse {

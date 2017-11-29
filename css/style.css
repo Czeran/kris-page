@@ -23,7 +23,10 @@ p {
   @media (min-width: 992px) {
     p {
       font-size: 18px;
-      font-weight: 400; } }
+      font-weight: 300; } }
+
+.own-container {
+  max-width: 1140px; }
 
 @media (min-width: 768px) {
   .button-collapse {
@@ -311,7 +314,12 @@ p {
   flex-direction: column;
   align-items: center;
   transition: all 3s ease-out;
-  padding: 20px 0; }
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    #responsive-design {
+      padding: 0px; } }
   @media (min-width: 768px) {
     #responsive-design {
       flex-direction: row;
@@ -487,12 +495,21 @@ p {
       position: relative; }
       @media (min-width: 768px) {
         #responsive-design .rwd-description .rwd-description-wrapper {
-          margin: 0 15px; } }
+          margin: 0 25px; } }
+      @media (min-width: 1200px) {
+        #responsive-design .rwd-description .rwd-description-wrapper {
+          margin: 0 50px; } }
     #responsive-design .rwd-description h1 {
       text-align: center;
       margin: 5px 0; }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-description h1 {
+          text-align: left; } }
     #responsive-design .rwd-description p {
       text-align: center; }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-description p {
+          text-align: left; } }
     @media (min-width: 768px) {
       #responsive-design .rwd-description {
         flex-basis: 50%;
