@@ -2361,9 +2361,6 @@ p {
       font-size: 18px;
       font-weight: 300; } }
 
-.own-container {
-  max-width: 1140px; }
-
 @media (min-width: 768px) {
   .button-collapse {
     display: none; } }
@@ -2870,7 +2867,8 @@ p {
       #technology .technology-wrapper {
         flex-basis: 33.3%; } }
     #technology .technology-wrapper i {
-      color: #0277BD; }
+      color: #0277BD;
+      font-size: 45px; }
     #technology .technology-wrapper h2 {
       margin-bottom: 10px; }
     #technology .technology-wrapper p {

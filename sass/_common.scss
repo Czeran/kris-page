@@ -38,12 +38,4 @@ p {
   }
 }
 
-.own-container {
-  max-width: 1140px;
-}
 
-.button-collapse {
-  @include md() {
-    display: none;
-  }
-}
