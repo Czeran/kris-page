@@ -12,11 +12,18 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
   color: #212121; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 35px; } }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   color: #616161; }
+  @media (min-width: 992px) {
+    p {
+      font-size: 18px;
+      font-weight: 400; } }
 
 @media (min-width: 768px) {
   .button-collapse {
@@ -342,9 +349,6 @@ p {
         #responsive-design .rwd-animation-wrapper .mobile {
           width: 130px;
           height: 220px; } }
-      @media (min-width: 768px) {
-        #responsive-design .rwd-animation-wrapper .mobile {
-          bottom: calc(50%  - 73.3px); } }
       #responsive-design .rwd-animation-wrapper .mobile .mobile-screen {
         width: 75%;
         height: 75%;
@@ -382,9 +386,6 @@ p {
         #responsive-design .rwd-animation-wrapper .tablet {
           height: 260px;
           width: 195px; } }
-      @media (min-width: 768px) {
-        #responsive-design .rwd-animation-wrapper .tablet {
-          bottom: calc(50%  - 86.6px); } }
       #responsive-design .rwd-animation-wrapper .tablet-screen {
         width: 75%;
         height: 75%;
@@ -392,7 +393,7 @@ p {
         display: flex;
         flex-direction: column; }
       #responsive-design .rwd-animation-wrapper .tablet-nav {
-        height: 20px;
+        height: 25px;
         width: 100%;
         background-color: #01579b;
         align-self: flex-start; }
@@ -429,9 +430,6 @@ p {
         #responsive-design .rwd-animation-wrapper .desktop {
           width: 330px;
           height: 250px; } }
-      @media (min-width: 768px) {
-        #responsive-design .rwd-animation-wrapper .desktop {
-          bottom: calc(50%  - 83.3px); } }
       #responsive-design .rwd-animation-wrapper .desktop-screen {
         width: 80%;
         height: 75%;
@@ -479,10 +477,17 @@ p {
               flex-basis: 45%; }
   #responsive-design .rwd-description {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      #responsive-design .rwd-description {
+        height: 100%; } }
     #responsive-design .rwd-description .rwd-description-wrapper {
-      position: relative;
-      top: 20%; }
+      position: relative; }
+      @media (min-width: 768px) {
+        #responsive-design .rwd-description .rwd-description-wrapper {
+          margin: 0 15px; } }
     #responsive-design .rwd-description h1 {
       text-align: center;
       margin: 5px 0; }

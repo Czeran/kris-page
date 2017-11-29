@@ -14,12 +14,21 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
   color: #212121;
+
+  @include lg() {
+    font-size: 35px;
+  }
 }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   color: #616161;
+
+  @include lg() {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 .button-collapse {
