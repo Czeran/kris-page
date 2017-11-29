@@ -1,0 +1,38 @@
+#technology {
+  max-width: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @include md() {
+    flex-direction: row;
+  }
+
+
+  .technology-wrapper {
+    text-align: center;
+    margin: 20px 20px 0 20px;
+
+    @include md() {
+      flex-basis: 33.3%;
+    }
+
+    i {
+      color: $light-blue;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 0 auto;
+
+    }
+
+  }
+
+}
