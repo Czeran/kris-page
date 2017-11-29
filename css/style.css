@@ -2859,7 +2859,8 @@ p {
   margin: 0 auto; }
   @media (min-width: 768px) {
     #technology {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-bottom: 75px; } }
   #technology .technology-wrapper {
     text-align: center;
     margin: 20px 20px 0 20px; }
