@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-    <link rel="stylesheet" href="build/style.css">
-    <title>Ver1.0.0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Strona domowa MC</title>
 
 </head>
 <body>
@@ -186,13 +186,33 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ducimus fugit maiores provident unde vero voluptas.</p>
         </div>
     </section>
+    <section id="testimonials">
+        <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-item white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+    </section>
 
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script>
-
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
     var ideAnimation = function () {
         setTimeout(function () {
             $('.ide').css('top', 0);
